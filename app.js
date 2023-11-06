@@ -31,6 +31,8 @@
 // Low to High
 
 function sortLowToHigh(numbers){
+    // Sorts the array from high low to high.
+    // Opposite will do high to low 
     return numbers.sort((a, b) => a - b);
 }
 
