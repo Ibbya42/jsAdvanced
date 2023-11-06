@@ -30,10 +30,27 @@
 // Question 2
 // Low to High
 
-function sortLowToHigh(numbers){
-    // Sorts the array from high low to high.
-    // Opposite will do high to low 
-    return numbers.sort((a, b) => a - b);
+// function sortLowToHigh(numbers){
+//     // Sorts the array from high low to high.
+//     // Opposite will do high to low 
+//     return numbers.sort((a, b) => a - b);
+// }
+
+// console.log(sortLowToHigh([20,100,50,70]))
+
+// Question 3
+// High to Low 
+
+function sortHightoLow(number){
+    // Sort by High to Low
+    // Need to specify the price variable which will be 
+    // used to put the numbers in order
+    return number.sort((a,b) => b.price - a.price)
 }
 
-console.log(sortLowToHigh([20,100,50,70]))
+console.log(sortHightoLow([
+    { id: 1, price: 50 },
+    { id: 2, price: 30 },
+    { id: 3, price: 80 }
+
+]));
